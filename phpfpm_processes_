@@ -16,7 +16,7 @@
 #%# capabilities=autoconf
 
 PHP_BIN=${phpbin-"php5-fpm"}
-PHP_POOL=${phppool-"www"}
+PHP_POOL=${0##*phpfpm_processes_}
 
 if [ "$1" = "autoconf" ]; then
 echo yes
